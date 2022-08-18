@@ -27,7 +27,7 @@ module.exports = {
 
 		const description = guild.description
 
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 		.setColor('#0099ff')
 		.setTitle(guild.name)
 		.setThumbnail(icon)
