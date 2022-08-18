@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment } = require(`discord.js`);
+const { EmbedBuilder } = require(`discord.js`);
 
 
 module.exports = {
@@ -14,13 +14,13 @@ module.exports = {
 
 		var url = `https://chart.googleapis.com/chart?cht=qr&chl=${text1}&chs=180x180&choe=UTF-8&chld=L|2`
 
-		const embed1 = new MessageEmbed()
+		const embed1 = new EmbedBuilder()
 		.setColor("RED")
 		.setDescription(`<:cross:996678479363969075> | Bir metin belirtmen gerekiyor.`)
 
 		if (!text) return message.reply({ embeds: [embed1] })
 
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 		.setColor('#0099ff')
 		.setAuthor({ name: author.tag, iconURL: avatar })
 		.setTitle(text)
