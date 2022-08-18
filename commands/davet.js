@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment } = require(`discord.js`);
+const { EmbedBuilder } = require(`discord.js`);
 
 module.exports = {
 	name: `davet`,
@@ -10,7 +10,7 @@ module.exports = {
     
     const avatar = author.displayAvatarURL({ dynamic: true })
     
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
     .setColor('#0099ff')
 		.setAuthor({ name: author.tag, iconURL: avatar })
     .setDescription(":partying_face: [Beni Sunucuna Almak İçin Tıkla](https://discordapp.com/oauth2/authorize?client_id=996343874509353122&scope=bot&permissions=8) | [Destek Sunucuma Gitmek İçin Tıkla](https://discord.gg/qvTuRxCkZa)")
