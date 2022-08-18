@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment } = require(`discord.js`);
+const { EmbedBuilder } = require(`discord.js`);
 
 module.exports = {
 	name: `rolbilgi`,
@@ -13,7 +13,7 @@ module.exports = {
 		const rolCreated = `<t:${parseInt(rol.createdTimestamp / 1000)}:f>`
 
 
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 		.setColor(rol.hexColor)
 		.setTitle(rol.name)
 		.setThumbnail(rol.iconURL({ dynamic: true }))
