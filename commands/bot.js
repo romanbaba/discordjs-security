@@ -11,7 +11,7 @@ module.exports = {
 		const { author, guild, channel } = message;
     
 
-		const owner = client.users.cache.get('978276967877054464').tag
+		const owner = client.users.cache.get('ID').tag
     
 		const cpu = os.cpus().map(c => c.model)[0]
 		var platform = os.platform()
@@ -21,7 +21,7 @@ module.exports = {
 
 		if (platform === 'win32') { platform = 'Windows' } else if (platform === 'linux') { platform = 'Linux' } else if (platform = 'darwin') { platform = 'macOS' }
 
-		const emb1ed = new MessageEmbed()
+		const emb1ed = new EmbedBuilder()
 		.setColor('RED')
 		.setDescription(`<:parkle:996678480764870747> | Veriler hesaplanıyor...`)
 		.setTimestamp()
@@ -30,7 +30,7 @@ module.exports = {
 
 			setTimeout(function() {
 
-				const embed = new MessageEmbed()
+				const embed = new EmbedBuilder()
 				.setTitle('Bot Bilgi')
 				.setColor('GREEN')
 				.setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
