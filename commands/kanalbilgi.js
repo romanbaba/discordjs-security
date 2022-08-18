@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment } = require(`discord.js`);
+const { EmbedBuilder } = require(`discord.js`);
 
 module.exports = {
 	name: `kanalbilgi`,
@@ -17,7 +17,7 @@ module.exports = {
 
 		const channelCreated = `<t:${parseInt(kanal.createdTimestamp / 1000)}:f>`
 
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 		.setColor('#0099ff')
 		.setTitle(kanal.name)
 		.addFields(
