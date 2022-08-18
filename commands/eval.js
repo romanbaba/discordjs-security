@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment } = require(`discord.js`);
+const { EmbedBuilder } = require(`discord.js`);
 
 module.exports = {
 	name: `eval`,
@@ -9,8 +9,8 @@ module.exports = {
 		const { author, guild, channel } = message;
 		const avatar = author.displayAvatarURL({ dynamic: true })
 
-    if(message.author.id !== '978276967877054464') {
-              return message.reply({ embeds: [ new MessageEmbed().setDescription('<:cross:996678479363969075> | Benim geliştiricim değilsin.').setColor('RED') ]});
+    if(message.author.id !== 'ID') {
+              return message.reply({ embeds: [ new EmbedBuilder().setDescription('<:cross:996678479363969075> | Benim geliştiricim değilsin.').setColor('RED') ]});
             }
     
 		try {
@@ -24,7 +24,7 @@ module.exports = {
 
 		if (typeof code !== 'string')
 		code = require('util').inspect(code, { depth: 0 });
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
         .setColor('#0099ff')
         .addField('Kod', `\`\`\`js\n${msg}\`\`\``)
         .addField('Sonuç', `\`\`\`js\n${code}\n\`\`\``)
@@ -36,7 +36,7 @@ module.exports = {
 
 
 		 } catch (e) {
-		 	let embed2 = new MessageEmbed()
+		 	let embed2 = new EmbedBuilder()
       .setColor('RED')
       .addField('Hata', "\`\`\`js\n"+e+"\n\`\`\`")
       .setFooter({ text:  `${author.tag} tarafından istendi.`, iconURL: author.displayAvatarURL({ dynamic: true })})
