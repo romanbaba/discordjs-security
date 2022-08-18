@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment } = require(`discord.js`);
+const { EmbedBuilder } = require(`discord.js`);
 
 module.exports = {
 	name: `ping`,
@@ -9,8 +9,8 @@ module.exports = {
 		const { author, guild, channel } = message;
 
     
-		const emb1ed = new MessageEmbed()
-		.setColor('RED')
+		const emb1ed = new EmbedBuilder()
+		.setColor('Red')
 		.setDescription(`Hesaplanıyor...`)
 		.setTimestamp()
 
@@ -18,8 +18,8 @@ module.exports = {
 
 			setTimeout(function() {
 
-				const embed = new MessageEmbed()
-				.setColor('GREEN')
+				const embed = new EmbedBuilder()
+				.setColor('Green')
 				.setDescription(`**Pong!** anlık gecikme sürem ***${client.ws.ping}ms***`)
 
 				msg.edit({ embeds: [embed] })
