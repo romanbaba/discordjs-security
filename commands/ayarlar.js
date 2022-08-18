@@ -9,7 +9,7 @@ module.exports = {
 		const { author, guild, channel } = message;
     
     if(!message.member.permissions.has('MANAGE_MESSAGES')) {
-              return message.reply({ embeds: [ new MessageEmbed().setDescription('<:cross:996678479363969075> | Bu komutunu kullanabilmek için `Mesajları Yönet` iznine sahip olman gerekiyor. ').setColor('RED') ]});
+              return message.reply({ embeds: [ new EmbedBuilder().setDescription('<:cross:996678479363969075> | Bu komutunu kullanabilmek için `Mesajları Yönet` iznine sahip olman gerekiyor. ').setColor('Red') ]});
             }
     
     
@@ -24,7 +24,7 @@ module.exports = {
       
       const avatar = author.displayAvatarURL({ dynamic: true })
       
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
       .setColor('#0099ff')
       .setTitle('Koruma Ayarları')
       .setThumbnail(avatar)
