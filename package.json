@@ -1,10 +1,10 @@
 {
-  "//1": "Discord bot altyapı!",
+  "//1": "RomanBot",
   "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "Discord hazır altyapı",
+  "//3": "RomanBot Altyapısı",
   "name": "hello-express",
-  "version": "0.0.1",
-  "description": "Glitch Discord Botu.",
+  "version": "1.7.0",
+  "description": "Discord.JS Altyapısı",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -20,13 +20,10 @@
   "engines": {
     "node": "16.x"
   },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
   "license": "MIT",
   "keywords": [
     "node",
-    "glitch",
+    "discord",
     "express"
   ]
 }
