@@ -22,7 +22,7 @@ module.exports = {
 		if (platform === 'win32') { platform = 'Windows' } else if (platform === 'linux') { platform = 'Linux' } else if (platform = 'darwin') { platform = 'macOS' }
 
 		const emb1ed = new EmbedBuilder()
-		.setColor('RED')
+		.setColor('Red')
 		.setDescription(`<:parkle:996678480764870747> | Veriler hesaplanıyor...`)
 		.setTimestamp()
 
@@ -32,7 +32,7 @@ module.exports = {
 
 				const embed = new EmbedBuilder()
 				.setTitle('Bot Bilgi')
-				.setColor('GREEN')
+				.setColor('Green')
 				.setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
 			.addFields(
 		{ name: 'Sahip', value: `<@978276967877054464> | ${owner}`},
