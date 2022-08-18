@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment } = require(`discord.js`);
+const { EmbedBuilder } = require(`discord.js`);
 
 module.exports = {
 	name: `kullanıcıbilgi`,
@@ -18,7 +18,7 @@ module.exports = {
 
 		const roles = target_member.roles.cache.filter(role => role.name !== '@everyone').map(role => role).join(' **|** ') || 'Bulunmuyor'
 
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 		.setColor('#0099ff')
 		.setAuthor({ name: target_user.tag, iconURL: avatar })
 		.setTitle('Kullanıcı Bilgileri')
