@@ -12,7 +12,7 @@ module.exports = {
 		const random = Math.floor(Math.random() * 6)
 		
 		const atılıyor = new EmbedBuilder()
-		.setColor('RED')
+		.setColor('Red')
 		.setAuthor({ name: author.tag, iconURL: avatar })
 		.setDescription('<:parkle:996678480764870747> | Zar atılıyor..')	
 		.setFooter({ text:  `${author.tag} tarafından istendi.`, iconURL: author.displayAvatarURL({ dynamic: true })})
