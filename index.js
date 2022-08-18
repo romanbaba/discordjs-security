@@ -1,4 +1,5 @@
-const { Client, Intents, Collection } = require("discord.js");
+const Discord = require("discord.js");
+const { GatewayIntentBits, Partials Collection } = require("discord.js");
 const { readdirSync } = require("fs");
 const { PREFIX, PORT, TOKEN } = require('./config.json')
 const express = require("express")
@@ -10,18 +11,17 @@ app.use("*", async (req, res, next) => {
     });
     app.listen(PORT || 80);
 
-const client = new Client({
-	intents: [
-	Intents.FLAGS.GUILD_MEMBERS,
-	Intents.FLAGS.GUILD_MESSAGES,
-	Intents.FLAGS.GUILDS
-	],
-	allowedMentions: {
+const INTENTS = Object.values(GatewayIntentBits);
+const PARTIALS = Object.values(Partials);
+const client = global.client = new Discord.Client({
+    intents: INTENTS,
+    allowedMentions: {
         parse: ["users"]
     },
-    partials: ["GUILD_MEMBER", "CHANNEL", "MESSAGE", "REACTION", "USER"],
+    partials: PARTIALS,
     retryLimit: 3
 });
+
 
 client.commands = new Collection();
 
