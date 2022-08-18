@@ -37,4 +37,7 @@ RomanBot: https://discord.gg/romanbot
     
 ### Havalı Birşey
 
-[!https://lanyard.cnrad.dev/api/978276967877054464]
+<div align="center">
+    <a href="https://discord.com/users/978276967877054464">
+  <img src="https://lanyard.cnrad.dev/api/978276967877054464"></a>
+</div>
