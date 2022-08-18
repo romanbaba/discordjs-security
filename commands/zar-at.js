@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment } = require(`discord.js`);
+const { EmbedBuilder } = require(`discord.js`);
 
 module.exports = {
 	name: `zar-at`,
@@ -11,7 +11,7 @@ module.exports = {
 		const avatar = author.displayAvatarURL({ dynamic: true })
 		const random = Math.floor(Math.random() * 6)
 		
-		const atılıyor = new MessageEmbed()
+		const atılıyor = new EmbedBuilder()
 		.setColor('RED')
 		.setAuthor({ name: author.tag, iconURL: avatar })
 		.setDescription('<:parkle:996678480764870747> | Zar atılıyor..')	
@@ -23,7 +23,7 @@ module.exports = {
 
 			setTimeout(function() {
 
-			const atıldı = new MessageEmbed()
+			const atıldı = new EmbedBuilder()
 		.setColor('#0099ff')
 		.setAuthor({ name: author.tag, iconURL: avatar })
 		.setDescription(':game_die: | Atıldı! çıkan sayı **'+random+'**')	
