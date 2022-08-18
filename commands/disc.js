@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment } = require(`discord.js`);
+const { EmbedBuilder } = require(`discord.js`);
 
 module.exports = {
 	name: `disc`,
@@ -21,7 +21,7 @@ module.exports = {
 		if (s <= 256) {
 
 
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 		.setColor('#0099ff')
 		.setAuthor({ name: author.tag, iconURL: avatar })
 		.setTitle('Tags')
@@ -34,8 +34,8 @@ module.exports = {
 		message.reply({ embeds: [embed] })
 
 		} else {
-			const embed = new MessageEmbed()
-		.setColor('RED')
+			const embed = new EmbedBuilder()
+		.setColor('Red')
 		.setAuthor({ name: author.tag, iconURL: avatar })
 		.setTitle('Tags')
 		.setDescription('Üzgünüm çok fazla tag olduğundan dolayı bunu size gösteremem.')
