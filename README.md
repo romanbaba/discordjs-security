@@ -35,4 +35,6 @@ Bu hata `Discord.JS` ile ilgili değilde `express` modülü ile alakalı bunun i
 Raven #2022: https://discord.gg/zKCJFxed2B
 RomanBot: https://discord.gg/romanbot
     
-   
+### Havalı Birşey
+
+[https://lanyard.cnrad.dev/api/978276967877054464](https://discord.com/users/978276967877054464)
