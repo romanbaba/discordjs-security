@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment, MessageActionRow, MessageButton } = require(`discord.js`);
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require(`discord.js`);
 const { PREFIX } = require('../config.json')
 
 module.exports = {
@@ -11,32 +11,32 @@ module.exports = {
 		const avatar = author.displayAvatarURL({ dynamic: true })
 
 
-		const buttons = new MessageActionRow()
+		const buttons = new ActionRowBuilder()
 			.addComponents(
-				new MessageButton()
+				new ButtonBuilder()
 					.setCustomId('home')
 					.setEmoji('🏠')
-					.setStyle('SUCCESS'),
+					.setStyle(ButtonStyle.Success),
 
-				new MessageButton()
+				new ButtonBuilder()
 					.setCustomId('sec')
 					.setLabel('Koruma')
-					.setStyle('SECONDARY'),
+					.setStyle(ButtonStyle.Secondary),
 	
-				new MessageButton()
+				new ButtonBuilder()
 					.setCustomId('user')
 					.setLabel('Kullanıcı')
-					.setStyle('SECONDARY'),
+					.setStyle(ButtonStyle.Secondary),
 			
-				new MessageButton()
+				new ButtonBuilder()
 					.setCustomId('bot')
 					.setLabel('Bot')
-					.setStyle('SECONDARY'),
+					.setStyle(ButtonStyle.Secondary),
 			);
 
 
 
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 		.setColor('#0099ff')
 		.setAuthor({ name: author.tag, iconURL: avatar })
 		.addFields(
@@ -57,7 +57,7 @@ module.exports = {
 		collector.on('collect', async i => {
 			if(i.customId === 'sec') { 
 
-			const embed = new MessageEmbed()
+			const embed = new EmbedBuilder()
 			.setColor('#0099ff')
 			.setAuthor({ name: author.tag, iconURL: avatar })
 			.addFields(
@@ -82,7 +82,7 @@ module.exports = {
 
 			if(i.customId === 'user') { 
 
-			const embed = new MessageEmbed()
+			const embed = new EmbedBuilder()
 			.setColor('#0099ff')
 			.setAuthor({ name: author.tag, iconURL: avatar })
 			.addFields(
@@ -104,7 +104,7 @@ module.exports = {
 
 			if(i.customId === 'bot') { 
 
-			const embed = new MessageEmbed()
+			const embed = new EmbedBuilder()
 			.setColor('#0099ff')
 			.setAuthor({ name: author.tag, iconURL: avatar })
 			.addFields(
@@ -124,7 +124,7 @@ module.exports = {
 
 		if(i.customId === 'home') { 
 
-			const embed = new MessageEmbed()
+			const embed = new EmbedBuilder()
 		.setColor('#0099ff')
 		.setAuthor({ name: author.tag, iconURL: avatar })
 		.addFields(
