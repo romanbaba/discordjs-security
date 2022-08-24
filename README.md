@@ -33,7 +33,7 @@ Bu hata `Discord.JS` ile ilgili değilde `express` modülü ile alakalı bunun i
 ### İletşim
 
 Raven #2022: https://discord.gg/zKCJFxed2B
-RomanBot: https://discord.gg/romanbot
+RomanBot: https://discord.gg/xR29dY3g3C
     
 ### Havalı Birşey
 
