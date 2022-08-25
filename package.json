@@ -17,6 +17,9 @@
     "moment": "^2.29.4",
     "fs": "^0.0.2"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "license": "MIT",
   "keywords": [
     "node",
