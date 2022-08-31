@@ -56,7 +56,7 @@ readdirSync('./events').forEach(f => {
 /* Dosyaları Kayıt Etme */
 
 
-client.login(process.env.TOKEN || null).then((app) => { 
+client.login(TOKEN || null).then((app) => { 
 	console.log(`[TOKEN] Token girişi başarılı.`)
 }).catch((err) => {
 	console.log(`[TOKEN] Token girişi başarısız.`)
