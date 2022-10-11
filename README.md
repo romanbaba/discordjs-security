@@ -6,7 +6,7 @@ Bu proje 'Roman#9999 (**978276967877054464**) tarafından geliştirilip sizlere 
 
 ### `[TOKEN] Token girişi başarısız` Hatası
 
-Eğer böyle bir hata alıyorsanız `index.js` dosyasına girip `59.` satırı gözden geçirin eğer sorununuz çözülmedi ise `.env` dosyası oluşturup içine girip şu kodları yazın:
+Eğer böyle bir hata alıyorsanız `app.js` dosyasına girip `59.` satırı gözden geçirin eğer sorununuz çözülmedi ise `.env` dosyası oluşturup içine girip şu kodları yazın:
 
 `TOKEN=TOKENİ GİR`
 
@@ -25,7 +25,7 @@ Burdaki "x" değişkendir herhangibi bir modül ismi gelebilir yerine. Bu hatan�
 
 ### `Error: listen EADDRINUSE: address already in use :::3000` Hatası
 
-Bu hata `Discord.JS` ile ilgili değilde `express` modülü ile alakalı bunun için `index.js` dosyamıza giriyoruz ve `6` ve `12.` satır arasındaki bütün kodları silip yerine şunu yazmanız gerkiyor:
+Bu hata `Discord.JS` ile ilgili değilde `express` modülü ile alakalı bunun için `app.js` dosyamıza giriyoruz ve `6` ve `12.` satır arasındaki bütün kodları silip yerine şunu yazmanız gerkiyor:
 
 ```app.use("/", async (req, res, next) => { res.json({ message: "Api!" }) next(); }) app.listen(PORT || 80);```
 
