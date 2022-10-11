@@ -25,7 +25,7 @@ Burdaki "x" değişkendir herhangibi bir modül ismi gelebilir yerine. Bu hatan�
 
 ### `Error: listen EADDRINUSE: address already in use :::3000` Hatası
 
-Bu hata `Discord.JS` ile ilgili değilde `express` modülü ile alakalı bunun için `app.js` dosyamıza giriyoruz ve `6` ve `12.` satır arasındaki bütün kodları silip yerine şunu yazmanız gerkiyor:
+Bu hata `Discord.JS` ile ilgili değilde `express` modülü ile alakalı bunun için `app.js` dosyamıza giriyoruz ve `54` ve `61.` satır arasındaki bütün kodları silip yerine şunu yazmanız gerkiyor:
 
 ```app.use("/", async (req, res, next) => { res.json({ message: "Api!" }) next(); }) app.listen(PORT || 80);```
 
