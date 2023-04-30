@@ -1,6 +1,6 @@
 # RomanBot
 
-Bu proje 'Roman#9999 (**978276967877054464**) tarafından geliştirilip sizlere açık kaynak kodlu şekilde ücretsiz olarak verilmiştir, kodların Raven #2022 (**997487954626883692**) sunucusu dışında paylaşılması veya başka birine verilmesi durumunda gerekli işlemler başlatılır.
+Bu proje 'Roman#9999 (**622350390871982080**) tarafından geliştirilip sizlere açık kaynak kodlu şekilde ücretsiz olarak verilmiştir, kodların Raven #2022 (**1096085223881576549**) sunucusu dışında paylaşılması veya başka birine verilmesi durumunda gerekli işlemler başlatılır.
 
 # ⚠️ Bariz Hatalar 
 
@@ -23,21 +23,14 @@ Aslında bu hatayı almanızın iki nedeni var.
 
 Burdaki "x" değişkendir herhangibi bir modül ismi gelebilir yerine. Bu hatanın sebebi kodları ilk defa çalıştırdıysanız böyle bir hata almanızız doğaldır, konsolu açıp `npm install` veya `npm install x` yazmanız yeterli olacaktır. Eğer hata almaya devam ediyorsanız `node_modules` klosörünü silin ve konsola `enable-pnmp` yazın.
 
-### `Error: listen EADDRINUSE: address already in use :::3000` Hatası
-
-Bu hata `Discord.JS` ile ilgili değilde `express` modülü ile alakalı bunun için `app.js` dosyamıza giriyoruz ve `54` ve `61.` satır arasındaki bütün kodları silip yerine şunu yazmanız gerkiyor:
-
-```app.use("/", async (req, res, next) => { res.json({ message: "Api!" }) next(); }) app.listen(PORT || 80);```
-
 
 ### İletşim
 
-Raven #2022: https://discord.gg/zKCJFxed2B
-RomanBot: https://discord.gg/xR29dY3g3C
+Raven #2022: https://discord.gg/altyapilar
     
 ### Havalı Birşey
 
 <div align="center">
-    <a href="https://discord.com/users/978276967877054464">
-  <img src="https://lanyard.cnrad.dev/api/978276967877054464"></a>
+    <a href="https://discord.com/users/622350390871982080">
+  <img src="https://lanyard.cnrad.dev/api/622350390871982080"></a>
 </div>
