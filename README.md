@@ -1,6 +1,6 @@
 # RomanBot
 
-Bu proje 'Roman#9999 (**622350390871982080**) tarafından geliştirilip sizlere açık kaynak kodlu şekilde ücretsiz olarak verilmiştir, kodların Raven #2022 (**1096085223881576549**) sunucusu dışında paylaşılması veya başka birine verilmesi durumunda gerekli işlemler başlatılır.
+Bu proje 'Roman#9999 (**622350390871982080**) tarafından geliştirilip sizlere açık kaynak kodlu şekilde ücretsiz olarak verilmiştir, kodların Raven's (**1096085223881576549**) sunucusu dışında paylaşılması veya başka birine verilmesi durumunda gerekli işlemler başlatılır.
 
 # ⚠️ Bariz Hatalar 
 
