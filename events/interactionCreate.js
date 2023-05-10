@@ -211,8 +211,8 @@ module.exports = async (client, interaction) => {
         try {
             cmd.execute(interaction.client, interaction, db);
             cooldownedUsers.set(userKey, 5 + currentDate);
-        } catch {
-            return client.functions.log("Komut hatası", "RUN_COMMAND");
+        } catch (err) {
+            return console.log(err);
         };
     };
 
